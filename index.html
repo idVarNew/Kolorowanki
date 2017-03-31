@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl" data-ng-app="app" data-ng-controller="mainController as mainController" data-ng-cloak>
+    <head>
+        <meta charset="utf-8">
+        <title>Malowanka - aplikacja do kolorowania obrazków</title>
+        <link href="assets/img/favicon.ico" rel="shortcut icon"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="assets/css/styles.css" rel="stylesheet"/>
+        <link data-app-google-link href="#" data-ng-href="https://fonts.googleapis.com/css?family={{ vmGL.googleLink || 'Acme'}}&amp;subset=latin-ext" rel="stylesheet"/>
+        <base href="/kolorowanki/">
+    </head>
+    <body class="{{pageClass}}">
+        <div class="container-fluid">
+            <header id="header" class="header">
+                <div class="brand">
+                    <h1 class="visuallyhidden">Kolorowanki</h1>
+                    <img src="assets/img/header.png" alt="Malowanka" class="header-image"/>
+                </div>
+                <nav class="nav-menu">
+                    <a href="main" data-ng-click="pageClass = 'home'">Główna</a>
+                    <a href="about-app" data-ng-click="pageClass = 'about-app'">O aplikacji</a>
+                    <a href="about-me" data-ng-click="pageClass = 'about-me'">O mnie</a>
+                </nav>
+            </header>
+            <main >
+                <div class="col-sm-2 sidebar options" data-ng-include="'app/modules/options/options.html'" data-app-options></div>
+                <div id="main" class="col-sm-8 main" data-app-adjust-width>
+                    <div id="page-content" class="page-content">
+                        <div data-ng-view data-app-intro-image></div>
+                    </div>
+                </div>
+                <div class="col-sm-2 sidebar painting-tools" data-ng-include="'app/modules/painting/tools.html'"></div>
+            </main>
+            <app-intro-message></app-intro-message>
+        </div>
+        <div class="browser-warning">
+            Kolorowanka działa tylko w szerokości powyżej 900 pikslei.
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+        <script src="assets/js/scripts.min.js"></script>
+    </body>
+</html>
