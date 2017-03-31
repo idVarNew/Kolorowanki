@@ -1,0 +1,22 @@
+.modal {
+    &.in .modal-dialog {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .modal-body {
+        clear: both;
+    }
+
+    .modal-footer {
+        clear: both;
+        display: block;
+    }
+
+    .modal-content {
+        padding: 15px;
+        box-shadow: none;
+    }
+}

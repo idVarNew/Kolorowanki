@@ -1,0 +1,28 @@
+@import "compass";
+/*  basic*/
+@import "partials/basic/basic";
+@import "partials/layout";
+/* shared */
+@import "partials/shared/canvas/canvas";
+@import "partials/shared/pages/pages";
+/* modules -  intro */
+@import "partials/modules/intro/intro";
+/*  modules  - options*/
+@import "partials/modules/options/image";
+@import "partials/modules/options/reset";
+@import "partials/modules/options/save";
+@import "partials/modules/options/text";
+/*  modules - painting*/
+@import "partials/modules/painting/brushTypes";
+@import "partials/modules/painting/brushColors";
+@import "partials/modules/painting/brushSizes";
+@import "partials/modules/painting/eraser";
+@import "partials/modules/painting/cursor";
+/*  modules - general */
+@import "partials/modules/general/panels";
+@import "partials/modules/general/sidebar";
+@import "partials/modules/general/nav";
+@import "partials/modules/general/brand";
+@import "partials/modules/general/modal";
+@import "partials/modules/general/currentTool";
+@import "partials/modules/general/buttons";

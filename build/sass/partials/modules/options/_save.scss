@@ -1,0 +1,18 @@
+.sidebar .save-image {
+    padding: 25px;
+    display: block;
+    font-size: 1.7rem;
+    @include media(minM) {
+        font-size: 1.4rem;
+    }
+    @include media(minL) {
+        font-size: 1.2rem;
+    }
+    @include media(minXL) {
+        font-size: 1.4rem;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

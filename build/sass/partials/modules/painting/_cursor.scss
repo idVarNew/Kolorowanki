@@ -1,0 +1,21 @@
+canvas {
+    cursor: url(../img/brush.png), auto;
+}
+
+.cursor {
+    &-eraser {
+        cursor: url(../img/icon.png), auto;
+    }
+
+    &-pen {
+        cursor: url(../img/pen.png), auto;
+    }
+
+    &-pencil {
+        cursor: url(../img/pencil.png), auto;
+    }
+
+    &-brush {
+        cursor: url(../img/brush.png), auto;
+    }
+}

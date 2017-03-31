@@ -1,0 +1,54 @@
+.brushes {
+    &-list {
+        overflow: hidden;
+        padding: 5px 0;
+        clear: both;
+    }
+
+    &-list-type {
+        float: left;
+        width: 25%;
+        opacity: 0.8;
+
+        img {
+            width: 50px;
+            @include media(minM) {
+                width: 40px;
+            }
+            @include media(minXL) {
+                width: auto;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-current {
+        padding: 18px 0;
+        @include media(minM) {
+            padding: 10px 0;
+        }
+        @include media(minXL) {
+            padding: 18px 0;
+        }
+    }
+
+    &-brush {
+        width: 140px;
+        @include media(minM) {
+            width: 40px;
+        }
+        @include media(minXL) {
+            width: 70px;
+        }
+    }
+
+    &-current-image {
+        width: 80px;
+        @include media(minM) {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    background-color: $colorW;
+    color: $color1;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::-moz-selection {
+    background: $color2;
+    text-shadow: none;
+}
+
+::selection {
+    background: $color2;
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color1;
+
+    &:hover {
+        color: $color3;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: $color2;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

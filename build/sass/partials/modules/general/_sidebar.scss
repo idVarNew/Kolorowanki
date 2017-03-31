@@ -1,0 +1,107 @@
+.sidebar {
+    padding: 0 10px;
+    @include media(minM) {
+        padding: 0 8px;
+    }
+    @include media(minXL) {
+        padding: 0 10px;
+    }
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 0;
+        @include media(minM) {
+            font-size: 1.0rem;
+        }
+        @include media(minL) {
+            font-size: 1.2rem;
+        }
+        @include media(minXL) {
+            font-size: 1.4rem;
+        }
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        padding: 15px 8px 14px;
+        background-color: $color4;
+        margin-bottom: 5px;
+        @include media(minM) {
+            font-size: 1.2rem;
+            padding: 0 8px;
+        }
+        @include media(minXL) {
+            padding: 8px 8px 3px;
+        }
+    }
+
+    h5 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        padding: 15px 0 8px;
+        @include media(minM) {
+            font-size: 1.0rem;
+        }
+    }
+
+    & > div {
+        display: block;
+        clear: both;
+        padding: 37px 0;
+        @include media(minM) {
+            padding: 17px 0;
+        }
+        border-bottom: 1px solid $color2;
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &.painting-tools {
+        h3 {
+            padding-bottom: 3px;
+            @include media(minM) {
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    &-title {
+        font-size: 2.5rem;
+        padding: 15px 0;
+        @include media(minM) {
+            font-size: 1.5rem;
+            padding: 0;
+        }
+        @include media(minXL) {
+            font-size: 1.8rem;
+        }
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+.browser-warning {
+    display: block;
+    @include media(minS3) {
+        display: none;
+    }
+}

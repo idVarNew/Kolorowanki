@@ -1,0 +1,32 @@
+.btn {
+    font-size: 1.7rem;
+    border-radius: 2px;
+    @include media(minM) {
+        font-size: 1.2rem;
+    }
+    @include media(minXL) {
+        font-size: 1.4rem;
+    }
+
+    &-default {
+        border-color: $colorW;
+
+        &:hover {
+            background-color: $colorW;
+            border-color: $colorW;
+            color: $colorB;
+            text-decoration: underline;
+        }
+    }
+
+    &-primary {
+        color: $colorW;
+        background-color: #ff8a00;
+        border-color: #ff8a00;
+
+        &:hover {
+            background-color: #ffaf51;
+            border-color: #ffaf51;
+        }
+    }
+}

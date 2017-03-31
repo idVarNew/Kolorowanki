@@ -1,0 +1,60 @@
+.container-fluid {
+    max-width: 1900px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.col {
+    &-sm-8 {
+        width: 100%;
+        padding: 0;
+        clear: both;
+        height: 340px;
+        @include media(minS) {
+            height: 450px;
+        }
+        @include media(minS1) {
+            height: 550px;
+        }
+        @include media(minS2) {
+            height: 590px;
+        }
+        @include media(minS3) {
+            height: 700px;
+        }
+        @include media(minS4) {
+            height: 800px;
+        }
+        @include media(minM) {
+            width: 64%;
+            padding: 0;
+            height: auto;
+            clear: none;
+        }
+    }
+
+    &-sm-2 {
+        width: 100%;
+        @include media(minM) {
+            width: 18%;
+            padding: 0;
+        }
+        @include media(minL) {
+            width: 18%;
+        }
+        @include media(minXL) {
+            width: 18%;
+            padding: 0 15px 0 0;
+        }
+    }
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}

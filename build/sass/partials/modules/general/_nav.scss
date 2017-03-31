@@ -1,0 +1,25 @@
+.nav-menu {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+    padding-top: 45px;
+    font-size: 1.7rem;
+    @include media(minM) {
+        padding-top: 0;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        font-size: 1.2rem;
+    }
+    text-transform: uppercase;
+    font-weight: bold;
+
+    a {
+        padding-right: 25px;
+    }
+}

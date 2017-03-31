@@ -1,0 +1,13 @@
+.eraser-element {
+    width: 70px;
+    @include media(minM) {
+        width: 40px;
+    }
+    @include media(minXL) {
+        width: 70px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,53 @@
+.intro {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    &-modal {
+        .modal-content {
+            background-image: url("../img/zeszyt.jpg");
+            border-radius: 0;
+            border: none;
+        }
+    }
+
+    &-content {
+        text-align: center;
+        font-family: Lato;
+        text-transform: uppercase;
+        font-family: Luckiest Guy;
+
+        .intro-title {
+            font-size: 5rem;
+            @include media(minM) {
+                font-size: 7.8rem;
+            }
+
+            span {
+                display: block;
+                font-size: 4.0rem;
+            }
+        }
+
+        .intro-message {
+            padding-top: 20px;
+            font-size: 2.3rem;
+        }
+    }
+
+    &-footer {
+        border-top: none;
+        padding: 0;
+    }
+}
+
+.modal.fade {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}

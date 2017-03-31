@@ -1,0 +1,53 @@
+.add-image {
+    padding: 19px;
+    text-align: center;
+    font-size: 1.2rem;
+    @include media(minM) {}
+
+    img {
+        width: 350px;
+    }
+}
+
+.selected-image {
+    text-align: center;
+    padding: 10px 0;
+
+    p {
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+}
+
+.confirmation {
+    padding: 20px;
+    text-align: center;
+}
+
+.selection {
+    &-text {
+        text-align: center;
+        padding: 25px 0 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+
+    &-images {
+        width: 48%;
+        float: left;
+
+        .selected {
+            border: 2px solid #ff8a00;
+        }
+    }
+
+    &-image {
+        border: 2px solid $colorW;
+    }
+}
+
+.images-modal {
+    border: 1px solid $color2;
+}

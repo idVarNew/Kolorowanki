@@ -1,0 +1,23 @@
+.brush-sizes {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &-item {
+        float: left;
+        margin-right: 2%;
+    }
+
+    &-current {
+        background-color: #000;
+        display: inline-block;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &.selected {
+            border: 4px solid #ff5142;
+        }
+    }
+}

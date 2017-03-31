@@ -1,0 +1,42 @@
+@mixin media($media) {
+     @if $media == minS{
+        @media only screen and (min-width: $break-small) {
+             @content;
+        }
+    }
+    @if $media == minS1 {
+         @media only screen and (min-width: $break-small1){
+            @content;
+        }
+    }
+    @if $media == minS2 {
+         @media only screen and (min-width: $break-small2){
+            @content;
+        }
+    }
+    @if $media == minS3 {
+         @media only screen and (min-width: $break-small3){
+            @content;
+        }
+    }
+    @if $media == minS3 {
+         @media only screen and (min-width: $break-small4){
+            @content;
+        }
+    }
+    @else if $media == minM {
+         @media only screen and (min-width: $break-medium){
+            @content;
+        }
+    }
+    @else if $media == minL {
+         @media only screen and (min-width: $break-large){
+            @content;
+        }
+    }
+    @else if $media == minXL {
+         @media only screen and (min-width: $break-xlarge){
+            @content;
+        }
+    }
+}

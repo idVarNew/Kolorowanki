@@ -1,0 +1,9 @@
+.clear-painting {
+    text-align: center;
+    padding: 19px 0;
+    display: block;
+    font-size: 1.7rem;
+    @include media(minM) {
+        font-size: 1.4rem;
+    }
+}

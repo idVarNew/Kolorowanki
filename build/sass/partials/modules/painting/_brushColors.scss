@@ -1,0 +1,57 @@
+.brush-color {
+    &-list {
+        @include media(minXL) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &-text {
+        padding-bottom: 10px;
+        display: block;
+        @include media(minM) {
+            padding-bottom: 0;
+            display: inline;
+        }
+    }
+
+    &-item {
+        width: 45px;
+        height: 45px;
+        margin-right: 3%;
+        margin-bottom: 4px;
+        cursor: pointer;
+        @include media(minM) {
+            width: 25px;
+            height: 25px;
+        }
+        @include media(minXL) {
+            width: 35px;
+            height: 35px;
+            margin-right: 4%;
+        }
+        display: inline-block;
+        border-radius: 100%;
+    }
+
+    &-current {
+        margin-top: 15px;
+        @include media(minXL) {
+            margin-top: 35px;
+        }
+    }
+
+    &-color {
+        width: 100%;
+        height: 55px;
+        @include media(minM) {
+            margin-top: -10px;
+            float: right;
+            margin-right: 3%;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+        }
+    }
+}

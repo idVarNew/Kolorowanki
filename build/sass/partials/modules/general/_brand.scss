@@ -1,0 +1,19 @@
+.brand {
+    width: 100%;
+    height: 125px;
+    background-image: url("../img/zeszyt.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media(minM) {
+        width: 18%;
+        height: 75px;
+    }
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
