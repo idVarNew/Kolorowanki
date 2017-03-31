@@ -1,0 +1,9 @@
+<div class="standard-fonts">
+    <h5>Podstawowe</h5>
+    <div class="standard-fonts-content">
+        <span class="glyphicon glyphicon-font"></span>
+        <select data-ng-disabled="inactive" ng-change="vmFO.standardFonts.select(vmFO.standardFont.name)" data-ng-model="vmFO.standardFont.name" data-ng-options="font.name for font in ::vmFO.standardFonts.all" value="{{::font.name}}" data-tooltip-placement="right" data-uib-tooltip="Fonty standardowe">
+            <option value="">-- Wybierz Font --</option>
+        </select>
+    </div>
+</div>

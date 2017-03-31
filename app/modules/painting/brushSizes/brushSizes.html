@@ -1,0 +1,17 @@
+<div class="brush-sizes">
+    <h3>
+        Rozmiar narzędzia
+    </h3>
+    <ul class="brush-sizes-list">
+        <li
+            class="brush-sizes-item"
+            data-ng-repeat="size in ::vmBrushSize.sizes.brushSizes"
+            data-ng-click="vmBrushSize.chooseBrushSize(size.size, $index)"
+            data-ng-model="vmBrushSize.sizes.selectedBrushSize">
+            <span
+                class="brush-sizes-current"
+                data-ng-attr-style="height: {{::size.size}}px; width: {{::size.size}}px;"
+                data-ng-class="{'selected':$index == vmBrushSize.sizes.selectedBrush}"></span>
+        </li>
+    </ul>
+</div>

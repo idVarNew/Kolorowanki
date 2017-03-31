@@ -1,0 +1,16 @@
+<div class="brush-color">
+    <h3>
+        Kolory
+    </h3>
+    <ul class="brush-color-list">
+        <li
+            class="brush-color-item"
+            data-ng-repeat="color in ::vmColors.colors.all"
+            data-ng-attr-style="background-color: {{::color.code}}"
+            data-ng-click="vmColors.select(color.code)"></li>
+    </ul>
+    <div class="brush-color-current">
+        <span class="brush-color-text current-tool">Bieżący kolor:</span>
+        <div class="brush-color-color color" style="background-color: {{vmColors.colors.selected}}" data-ng-model="vmColors.colors.selected"></div>
+    </div>
+</div>

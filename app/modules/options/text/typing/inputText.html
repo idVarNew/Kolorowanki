@@ -1,0 +1,9 @@
+<div class="text">
+    <h4>Wpisz dowolny teskt</h4>
+    <div class="text-content">
+        <input id="input-text" type="text" data-ng-disabled="inactive" data-ng-model="vmText.inputText.data" placeholder="Dla ..." data-ng-change="vmText.type.text(vmText.inputText.data)">
+        <button id="remove" class="remove-text" data-ng-click="vmText.type.removeText()" data-ng-show="vmText.inputText.data" data-tooltip-placement="right" data-uib-tooltip="Usuń tekst">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+</div>

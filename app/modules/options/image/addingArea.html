@@ -1,0 +1,13 @@
+<div class="add-image">
+    <div data-ng-include="'app/modules/options/image/selectedImage.html'"></div>
+    <button class="btn btn-default" data-ng-click="vmIM.open('imagesToChoose.html')" data-ng-if="vmIM.selected" data-ng-disabled="inactive">
+        <span class="glyphicon glyphicon-file"></span>
+        Wybierz nową kolorowankę
+    </button>
+    <button type="button" class="btn btn-default" data-ng-click="vmIM.open('imagesToChoose.html')" data-ng-if="!vmIM.selected" data-ng-disabled="inactive">
+        <span class="glyphicon glyphicon-file"></span>
+        Wybierz kolorowankę
+    </button>
+</div>
+
+</div>

@@ -1,0 +1,39 @@
+<h2 class="sidebar-title">Opcje</h2>
+<uib-accordion close-others="oneAtATime">
+
+    <div class="option-image" data-uib-accordion-group is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+        <uib-accordion-heading>
+            <span class="glyphicon glyphicon-picture"></span>
+            Wybierz obrazek
+            <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-down': status.isFirstOpen, 'glyphicon-chevron-right': !status.isFirstOpen}"></i>
+        </uib-accordion-heading>
+        <app-images-modal></app-images-modal>
+    </div>
+
+    <div class="option-text" data-uib-accordion-group is-open="status.one">
+        <uib-accordion-heading>
+            <span class="glyphicon glyphicon-font"></span>
+            Dodaj podpis
+            <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-down': status.one, 'glyphicon-chevron-right': !status.one}"></i>
+        </uib-accordion-heading>
+        <div data-ng-include="'app/modules/options/text/fontOptions.html'"></div>
+    </div>
+
+    <div class="option-reset" data-uib-accordion-group is-open="status.two">
+        <uib-accordion-heading>
+            <span class='glyphicon glyphicon-remove'></span>
+            Pokoloruj od nowa
+            <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-down': status.two, 'glyphicon-chevron-right': !status.two}"></i>
+        </uib-accordion-heading>
+        <app-clear-painting></app-clear-painting>
+    </div>
+
+    <div class="option-save" data-uib-accordion-group is-open="status.three">
+        <uib-accordion-heading>
+            <span class='glyphicon glyphicon-floppy-save'></span>
+            Zapisz
+            <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-down': status.three, 'glyphicon-chevron-right': !status.three}"></i>
+        </uib-accordion-heading>
+        <app-save-picture></app-save-picture>
+    </div>
+</uib-accordion>

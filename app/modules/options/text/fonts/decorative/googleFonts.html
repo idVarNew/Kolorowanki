@@ -1,0 +1,10 @@
+<div class="google-fonts">
+    <h5>Ozdobne - Google Fonts</h5>
+    <div class="google-fonts-content">
+        <span class="glyphicon glyphicon-font"></span>
+        <select data-ng-disabled="inactive" data-ng-change="vmGF.googleFonts.select(vmGF.googleFonts.name)" data-ng-model="vmGF.googleFonts.name" data-tooltip-placement="right" data-uib-tooltip="Google Fonts">
+            <option value="">-- Wybierz Font --</option>
+            <option data-ng-repeat="font  in ::vmGF.googleFonts.handwriting track by $index">{{ ::font.family  }}</option>
+        </select>
+    </div>
+</div>

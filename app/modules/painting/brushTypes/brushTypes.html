@@ -1,0 +1,14 @@
+<div class="brushes">
+    <h3>
+        Rodzaje pędzli
+    </h3>
+    <div class="brushes-current">
+        <img class="brushes-current-image" data-ng-src="{{vmBrushes.brushes.selected}}" data-ng-model="vmBrushes.brushes.selectedType" alt="Pędzel w użyciu"/>
+        <span class="brushes-current-text current-tool">Bieżący pędzel</span>
+    </div>
+    <ul class="brushes-list">
+        <li class="brushes-list-type" data-ng-repeat="brush in vmBrushes.brushes.all" data-ng-click="vmBrushes.brushes.select(brush)">
+            <img data-ng-src="{{brush.url}}" alt="{{brush.name}}" data-tooltip-placement="bottom" data-uib-tooltip="{{brush.name}}"/>
+        </li>
+    </ul>
+</div>

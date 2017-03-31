@@ -1,0 +1,27 @@
+<div data-ng-show="vmIM.imagesContainer">
+    <p class="selection-text">
+        Wybierz obrazek, kótry pokolorujesz
+    </p>
+    <div class="modal-body" id="modal-body">
+        <ul>
+            <li data-ng-repeat="item in ::vmIM.items" class="selection-images">
+                <a href="#" data-ng-click="$event.preventDefault(); vmIM.selected.item = item; vmIM.highlight($index)">
+                    <img class="selection-image" data-ng-src="{{ ::item }}" alt="" data-ng-class="{'selected':$index == vmIM.highlighted}">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-ng-show="vmIM.confirmation">
+    <p class="confirmation">
+        UWAGA: Wybierając nowy obrazek stracisz obecnie używaną kolorowankę.<br/>
+        Czy mimo to chcesz wybrać nowy obrazek do pokolorowania?<br/>
+    </p>
+</div>
+<div class="modal-footer">
+    <button data-ng-show="vmIM.confirmation" class="btn btn-primary" type="button" data-ng-click="vmIM.confirm()">
+        Tak, chcę wybrać nowy obrazek
+    </button>
+    <button data-ng-show="vmIM.selected.item" class="btn btn-primary" type="button" data-ng-click="vmIM.ok()">Potwierdź Wybór</button>
+    <button class="btn btn-warning" type="button" data-ng-click="vmIM.cancel()">Anuluj</button>
+</div>

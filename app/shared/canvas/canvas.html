@@ -1,0 +1,11 @@
+<div class="canvas">
+    <canvas data-app-canvas id="layer1" class="layer1" width="{{ adjusted.width || 1024}}" height="{{adjusted.height || 819}}" data-app-clear-canvas data-app-clear-canvas-painting data-app-on-resize></canvas>
+
+    <app-text data-app-canvas id="layer4" class="layer4" width="{{  adjusted.width || 1024}}" height="{{ adjusted.height || 819}}" data-app-clear-canvas data-app-add-text data-app-change-font data-app-change-align data-app-on-resize></app-text >
+
+    <canvas data-app-canvas id="layer2" class="layer2" data-ng-class="vmCursor.cursor" width="{{  adjusted.width || 1024}}" height="{{ adjusted.height || 819}}" data-app-clear-canvas app-add-image data-app-show-cursor data-app-on-resize></canvas>
+
+    <canvas data-app-canvas id="layer3" class="layer3" width="{{ adjusted.width  || 1024}}" height="{{adjusted.height || 819}}" data-app-on-resize></canvas>
+
+    <canvas data-app-canvas id="layer5" class="layer5" width="{{ adjusted.width || 1024}}" height="{{adjusted.height || 819}}" data-app-background data-app-on-resize></canvas>
+</div>

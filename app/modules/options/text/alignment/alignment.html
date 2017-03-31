@@ -1,0 +1,6 @@
+<div class="alignment">
+    <h4>Zmień położenie tesktu</h4>
+    <button data-ng-disabled="inactive" data-ng-class="{'selected':$index == vmFA.alignment.selectedAlign}" class="btn btn-default" data-ng-repeat="type in ::vmFA.alignment.types track by $index" data-ng-click="vmFA.alignment.select(type.align, $index)" type="button" data-tooltip-placement="bottom" data-uib-tooltip="{{::type.align}}">
+        <span class="glyphicon {{ ::type.icon }}"></span>
+    </button>
+</div>
